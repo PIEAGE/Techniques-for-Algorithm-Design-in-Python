@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Concepts Learned</title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+  <!-- Font Awesome JS -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
+
+  <!-- Font awesome icons -->
+  <script src="https://kit.fontawesome.com/fd65b3caf9.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="google-code-prettify/prettify.css">
+  <script type="text/javascript" src="google-code-prettify/prettify.js"></script>
+
+</head>
+
+<body onload="PR.prettyPrint()">
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+
+
+        <h3>
+                  <img src="assets/images/LeetCode.png" alt="Leet Code" style="width:48px;height:48px;">
+
+                  LeetCode</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+        <!-- <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                      <i class="fas fa-pen" style="margin-right: 5px"></i>
+                      Strings
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li> -->
+
+
+
+
+        <li>
+          <a href="#general">
+            <i class="fas fa-book" style="margin-right: 5px"></i>
+            General
+          </a>
+        </li>
+
+        <!-- <li>
+          <a href="#python">
+            <i class="fab fa-python" style="margin-right: 5px"></i>
+            Python Structures
+          </a>
+        </li> -->
+
+
+        <li>
+          <a href="#python" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fab fa-python" style="margin-right: 5px"></i>
+            Python Structures
+          </a>
+        </li>
+
+        <ul class="collapse list-unstyled" id="python">
+          <li>
+            <a href="#sets">Sets</a>
+          </li>
+          <li>
+            <a href="#dictionaries">Dictionaries</a>
+          </li>
+          <li>
+            <a href="#lists">Lists</a>
+          </li>
+
+        </ul>
+
+
+        <li>
+          <a href="#stringsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-pen" style="margin-right: 5px"></i>
+            Strings
+          </a>
+        </li>
+
+        <ul class="collapse list-unstyled" id="stringsSubmenu">
+          <li>
+            <a href="https://leetcode.com/problemset/all/?topicSlugs=string">Exercises</a>
+          </li>
+          <li>
+            <a href="#ord">ord( )</a>
+          </li>
+          <li>
+            <a href="#ComplexNumbers">Complex Numbers</a>
+          </li>
+          <li>
+            <a href="#pythonIndex">Python Index's</a>
+          </li>
+          <li>
+            <a href="#pythonCounter">Counter</a>
+          </li>
+
+        </ul>
+
+
+
+        <li>
+          <a href="#linkedListSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="fas fa-ellipsis-h" style="margin-right: 5px"></i>
+            Linked Lists
+          </a>
+        </li>
+
+        <ul class="collapse list-unstyled" id="linkedListSubmenu">
+          <li>
+            <a href="https://leetcode.com/problemset/all/?topicSlugs=string">Exercises</a>
+          </li>
+          <li>
+            <a href="#whileLoops">While loops</a>
+          </li>
+          <li>
+            <a href="#headAndTail">Head + Tail</a>
+          </li>
+
+          <li>
+            <a href="#runners">Runners</a>
+          </li>
+
+
+        </ul>
+
+
+
+
+
+        <li>
+          <a href="#arraysSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                      <i class="fas fa-th-list" style="margin-right: 5px"></i>
+                      Arrays</a>
+          <ul class="collapse list-unstyled" id="arraysSubmenu">
+            <li>
+              <a href="https://leetcode.com/problemset/all/?topicSlugs=array">Exercises</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#stacksSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                      <i class="fas fa-layer-group" style="margin-right: 5px"></i>
+                      Stacks</a>
+          <ul class="collapse list-unstyled" id="stacksSubmenu">
+            <li>
+              <a href="https://leetcode.com/problemset/all/?topicSlugs=stack">Link</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#hashSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                      <i class="fas fa-hashtag" style="margin-right: 5px"></i>
+                      Hash Tables</a>
+          <ul class="collapse list-unstyled" id="hashSubmenu">
+            <li>
+              <a href="https://leetcode.com/problemset/all/?topicSlugs=hash-table">Link</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+          </ul>
+        </li>
+
+
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+        <li>
+          <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+        </li>
+        <li>
+          <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top:-14px !important;">
+        <div class="container-fluid">
+
+          <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+        </div>
+      </nav>
+
+      <h1>
+        <a name="general"><i class="fas fa-pen" style="margin-right: 5px"></i></a>
+        General
+      </h1><br>
+
+
+
+      <div class = "card">
+        <div class = "card-body">
+          <a name="ofo" ><h3>Order of Operations</h3></a><br>
+          <ol>
+            <li>Try to solve the problem on your own<br></li>
+            <li>Write down your attempt on paper<br></li>
+            <li> Consider the following test cases</li>
+            <ol>
+              <li>General Cases</li>
+              <li>Base Cases</li>
+              <li>Error Cases</li>
+            </ol>
+          </ol>
+        </div>
+      </div><br>
+
+
+      <div class = "card">
+        <div class = "card-body">
+          <a name="atp" ><h3>Approahing the Problem</h3></a><br>
+          <ol>
+          <li style="font-size: 15px;">
+            <!-- 1st item -->
+            <h5>Listen Carefully</h5>
+               <strong>Listen</strong> to the question carefully to extract important information for ex the phrase "sorted list "<br><br>
+           </li>
+
+          <li style="font-size: 15px;">
+            <!-- 2nd item -->
+            <h5>Upon <strong>drawing an example</strong> make sure it is:</h5>
+          </li>
+            <ol>
+            <li>Specifc</li>
+            <li>Sufficiently large</li>
+            <li>Not a special case - We want a general case at first</li>
+          </ol><br>
+
+          <!-- 3rd item -->
+          <li><h5>Brute force solution</h5>
+            Write down <strong>brute force solution</strong> and discuss its complexity and then dive into improvements</li><br>
+
+          <!-- 4th item -->
+          <li><h5>Optimise</h5></li>
+            <ol>
+              <li>Did you use all the question information?</li>
+              <li>Use a fresh example</li>
+              <li>Use an imperfect solution to work out why it isn't working and what a perfect solution would do instead</li>
+              <li>Use extra space to see if it helps run time</li>
+              <li>Can we sort values or carry out some operation that will save us time in the long run?</li>
+              <li>Use a hash table</li>
+            </ol><br>
+
+          <!-- 5th item -->
+          <li>
+            <h5>Walk through your code</h5>
+            Solidify your understanding of what you've just written</li><br>
+
+          <!-- 6th item -->
+          <li>
+            <h5>Implement</h5>
+             Add error checking as a todo to your code</li><br>
+
+          <!-- 7th item -->
+          <li>
+            <h5>Test your code</h5>
+            Add error checking as a todo to your code</li>
+
+
+        </ol>
+        </div>
+      </div><br>
+
+
+      <div class = "card">
+        <div class = "card-body">
+          <h3>BUD Optimisations</h3>
+
+          <h5>Bottlenecks</h5>
+          Look for the worst complexity part and see if you can improve it -
+          it's often searches or moving through datastructures which are the most
+          inefficient parts of algorithms<br><br>
+
+          <h5>Unnecessary Work</h5>
+          Try and remove multiple loops by looking at the question from a different
+          perspective<br><br>
+
+          <h5>Duplicated Work</h5>
+          Quite simply are we doing something more than once? Here is where we might
+          be able to utilise a hash set
+        </div>
+      </div><br>
+
+
+      <div class = "card">
+        <div class = "card-body">
+          <h3>Other tips</h3>
+
+          <h5>Perception</h5>
+          Remember to not just think of these tasks as computer algorithms but approach
+          them from the perspective of what you would do without a computer first! Often you'll find
+          you intuitively know what to do and then can convert that intuitive process into code<br><br>
+
+          <h5>Unnecessary Work</h5>
+          Try and remove multiple loops by looking at the question from a different
+          perspective<br><br>
+
+          <h5>Data Structures</h5>
+          Run through all the data structures you know about and see if they could be applied to the problem
+          to gain better efficiency
+        </div>
+      </div>
+
+
+      <div class="line"></div>
+      <h1>
+        <a name="python"><i class="fab fa-python" style="margin-right: 5px"></i></a>
+        Python
+      </h1>
+      <div class="line"></div>
+
+      <a name="sets"><h3>Sets</h3><br></a>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+      thisSet = {"itemOne", "itemTwo", "itemThree"}
+      print("itemOne" in thisSet)
+
+      thisSet.add("itemFour")
+      print(thisSet)
+
+      thisSet.remove("itemFour")
+      print(thisSet)
+
+      x = thisSet.pop   #Removes and returns last item
+      print(x)
+      print(thisSet)
+      </pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Output
+            <p>
+              <pre class="prettyprint">
+      True
+
+      {"itemOne", "itemTwo", "itemThree", "itemFour"}
+
+      {"itemOne", "itemTwo", "itemThree"}
+
+      itemThree
+
+      {"itemOne", "itemTwo"}
+
+      </pre>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <a name="dictionaries"><h3>Dictionaries</h3><br></a>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+          thisdict =	{
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+          }
+          x = thisdict["model"]
+          print(x)
+          y = thisdict["model"] = "Honda"
+          print(y)
+
+
+
+      </pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Output
+            <p>
+              <pre class="prettyprint">
+      Mustang
+
+      Honda
+      </pre>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="line"></div>
+
+      <a name="lists"><h3>Lists</h3><br></a>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+      thislist = ["apple", "banana", "cherry"]
+      if "apple" in thislist:
+        print("Yes")
+
+      print(len(thislist))
+
+      thislist.append("mango")
+      print(thislist)
+
+      thislist.insert(1, "strawberry")
+      print(thislist)
+      </pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Output
+            <p>
+              <pre class="prettyprint">
+      Yes
+
+      3
+
+      ["apple", "banana", "cherry", "mango"]
+
+      ["apple", "strawberry", "banana", "cherry", "mango"]
+      </pre>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="line"></div>
+
+
+      <h1>
+              <i class="fas fa-pen" style="margin-right: 5px"></i>
+              Strings
+      </h1>
+
+      <div class="line"></div>
+
+
+      <a name="ord"><h3>ord</h3><br></a>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+    print(ord('A'))
+    print(ord('Z'))
+    print(ord('a'))
+    print(ord('z')) </pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Output
+            <p>
+              <pre class="prettyprint">
+  65
+  90
+  97
+  122</pre>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <h3 style="margin-left: 15px">Explanation</h3>
+      <p style="margin-left: 15px">
+        The ord function returns an integer representing the Unicode code point of the character.<br>
+        The reverse function is chr( ) which returns a string of one character whose ASCII code is the integer i
+      </p>
+
+      <h3 style="margin-left: 15px">Uses</h3>
+      <p style="margin-left: 15px">
+        <ul>
+          <a href="https://leetcode.com/problems/unique-morse-code-words/"><li>Mapping characters to an equivilent something</li></a>
+          <a href="https://leetcode.com/problems/to-lower-case/"><li>Changing character cases</li></a>
+        </ul>
+
+      </p>
+
+
+
+      <div class="line"></div>
+
+      <a name="ComplexNumbers"><h3>Complex Numbers</h3><br></a>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+    a = 1j
+    b = -1j
+    print(a + b)
+    print(1j * 1j)</pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Output
+            <p>
+              <pre class="prettyprint">
+  0j
+  -1 + 0j</pre>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <h3 style="margin-left: 15px">Explanation</h3>
+      <p style="margin-left: 15px">
+        Pythons way of representing complex numbers
+      </p>
+
+      <h3 style="margin-left: 15px">Uses</h3>
+      <p style="margin-left: 15px">
+        <ul>
+          <a href="https://leetcode.com/problems/robot-return-to-origin/"><li>We can use this to represent a simple grid system</li></a>
+        </ul>
+
+      </p>
+
+      <div class="line"></div>
+      <a name="pythonIndex"><h3>Python Index's</h3><br></a>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+    s = 'abcde'
+    for i in range(len(s)//2):
+        s[-(i+1)], s[i] = s[i], s[-(i+1)]</pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Output
+            <p>
+              <pre class="prettyprint lang-py">
+  edcba</pre>
+            </p>
+          </div>
+        </div>
+      </div><br>
+
+      <div class="line"></div>
+      <a name="pythonCounter"><h3>Python Counter</h3><br></a>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+    from collections import Counter
+
+    str1 = "abcdefgg"
+    counter = Counter()
+    for c in str1:
+      counter[c] = counter[c] + 1
+    print(counter)
+</pre>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Output
+            <p>
+              <pre class="prettyprint lang-py">
+    Counter({'g': 2, 'a': 1, 'b': 1, 'c': 1, 'd': 1, 'e': 1, 'f': 1})
+</pre>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+
+
+      <div class="line"></div>
+
+
+      <h1>
+              <i class="fas fa-ellipsis-h" style="margin-right: 5px"></i>
+              Linked Lists
+      </h1>
+
+      <div class="line"></div>
+
+
+      <a name="whileLoops"><h3>While Loops</h3><br></a>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+      current = ll.head
+      while current:
+        print(current)
+        current = current.next
+    </pre>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <br><br>
+      <h3 style="margin-left: 15px">Explanation</h3>
+      <p style="margin-left: 15px">
+        While loops are more often than not the way that we traverse LinkedLists
+      </p>
+
+
+      <div class="line"></div>
+
+
+      <a name="headAndTail"><h3>Head and Tail</h3><br></a>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+      current = ll.head
+      while current.next:
+        print(current.value)
+        current = current.next
+      </pre>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <br><br>
+      <h3 style="margin-left: 15px">Explanation</h3>
+      <p style="margin-left: 15px">
+        This code is the same as before but notice that we are making use of the
+        head. This is such an important part of interacting with LinkedLists so don't overlook it
+      </p>
+
+
+      <div class="line"></div>
+
+
+      <a name="runners"><h3>Runners</h3><br></a>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Code
+            <p>
+              <pre class="prettyprint lang-py">
+      #Assume Linked List 5 -> 4 -> 3 -> 2 -> 1
+
+      curr = ll.head
+      while curr:
+        print('Curr:' + str(curr))
+        runner = curr
+
+        while runner.next:
+          print('Runner:' + str(runner))
+      </pre>
+            </p>
+          </div>
+        </div>
+
+        <br><br><br>
+
+
+        <div class="col-sm-12">
+          <div class="card" style="margin-bottom:-20px; margin-left: 15px">
+            &nbsp;Output
+            <p>
+              <pre class="prettyprint lang-py">
+        current: 5
+        Runner: 4
+        Runner: 3
+        Runner: 2
+        Runner: 1
+
+        current: 4
+        Runner: 3
+        Runner: 2
+        Runner: 1
+
+        current: 3
+        Runner: 2
+        Runner: 1
+
+        etc etc
+      </pre>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <br><br>
+      <h3 style="margin-left: 15px">Explanation</h3>
+      <p style="margin-left: 15px">
+        This code is the same as before but notice that we are making use of the
+        head. This is such an important part of interacting with LinkedLists so don't overlook it
+      </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="line"></div>
+
+
+      <h1>
+              <i class="fas fa-th-list" style="margin-right: 5px"></i>
+              Arrays
+            </h1>
+      <div class="line"></div>
+
+      <h3 style="margin-left: 15px">Lorem Ipsum Dolor</h3>
+      <p style="margin-left: 15px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="line"></div>
+
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="line"></div>
+
+      <h2>Lorem Ipsum Dolor</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- jQuery Custom Scroller CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>
